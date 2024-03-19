@@ -54,9 +54,10 @@ ol {
 	max-width: 20em;
 }
 
-a:hover, h2:hover {
+li:hover, h2:hover {
 	color: var(--highlight-color);
 }
+
 
 img {
 	max-height: 4em;
