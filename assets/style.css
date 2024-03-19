@@ -2,8 +2,9 @@
 
 :root {
 	--font-size: 20px;
-	--color: darkgrey;
+	--color: black;
 	--gutter: calc(var(--font-size)*1.618);
+	--highlight-color: hotpink;
 }
 
 @media (min-width: 600px) {
@@ -26,14 +27,48 @@ h1 {
 	font-size: calc(var(--font-size)*2);
 }
 
+h2 {
+	font-size: var(--font-size)
+}
+
+p {
+	font-size: calc(var(--font-size)*0.75);
+}
+
 
 section {
 	display: flex;
 	flex-direction: row;
 	column-gap: var(--gutter);
+	justify-content: space-between;
+	padding-top: calc(var(--gutter)*2);
+}
+
+ol {
+	display: flex;
+	flex-direction: column;
+	row-gap: calc(var(--gutter)*0.5);
 }
 
 #about {
 	max-width: 20em;
+}
+
+a:hover, h2:hover {
+	color: var(--highlight-color);
+}
+
+img {
+	max-height: 4em;
+	transition: 0.5s;
+}
+
+img:hover {
+	max-height: 6em;
+	transition: 0.5s;
+}
+
+footer {
+	font-size: calc(var(--font-size)*0.5);
 }
 
