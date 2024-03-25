@@ -71,5 +71,8 @@ img:hover {
 
 footer {
 	font-size: calc(var(--font-size)*0.5);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
