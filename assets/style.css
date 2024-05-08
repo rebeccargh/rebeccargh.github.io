@@ -53,6 +53,10 @@ section {
 	position: relative;
 }
 
+section:nth-of-type(1) {
+	padding-left: var(--gutter);
+}
+
 ol {
 	font-size: calc(var(--font-size)*0.75);
 	display: flex;
@@ -128,24 +132,26 @@ footer p {
 
 footer img{
 	border: none;
+	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆</text></svg>") 16 0,auto;
 }
 
 /* Custom cursors */
-li:nth-of-type(1):hover {
+a:nth-of-type(1):hover {
 	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>💻</text></svg>") 16 0,auto;
 }
-li:nth-of-type(2):hover {
+a:nth-of-type(2):hover {
 	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🤬</text></svg>") 16 0,auto;
 }
-li:nth-of-type(3):hover {
+a:nth-of-type(3):hover {
 	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🧬</text></svg>") 16 0,auto;
 }
-li:nth-of-type(4):hover {
+a:nth-of-type(4):hover {
 	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍄</text></svg>") 16 0,auto;
 }
-li:nth-of-type(5):hover {
+a:nth-of-type(5):hover {
 	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>📵</text></svg>") 16 0,auto;
 }
+
 
 @media screen and (max-width: 850px) {
 	body {
